@@ -1,0 +1,41 @@
+$bgc: #ff5000;
+$ffh: 'Oswald', serif;
+$fflink: 'Verdana' serif;
+$linkCol: #000000;
+
+
+
+.header{
+    background-color: $bgc;
+    font-family: $ffh;
+    padding: 0.625em;
+}
+
+.header h1{
+    text-align: center;
+    font-size: 3.75em;
+    padding-bottom: 0.5em;
+        
+}
+
+.header__items{
+    display: flex;
+    justify-content: space-around;
+    font-family: $fflink;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin: 0 25%;
+    
+}
+
+a:link {
+    color: $linkCol;
+    max-width: 50em;
+    text-decoration: none;
+}
+
+a:visited {
+    color: $linkCol;
+    max-width: 50em;
+    text-decoration: none;
+}

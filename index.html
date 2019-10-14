@@ -4,17 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Vöruhúsið</title>
-
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header>
+    <header class="header">
       <h1>Prílihúsið</h1>
-      <a href="index.html">Forsíða</a>
-      <a href="pages/products.html">Vörur</a>
-      <a href="pages/course.html">Námskeið</a>
-      <a href="pages/staff.html">Starfsfólk</a>
+      <div class="header__items">
+        <a href="index.html">Forsíða</a>
+        <a href="pages/products.html">Vörur</a>
+        <a href="pages/course.html">Námskeið</a>
+        <a href="pages/staff.html">Starfsfólk</a>
+      </div>
     </header>
     <main>
       <img src="img/climbing-store.jpg">
@@ -26,6 +28,38 @@
       <button>Kynnast starfsfólki</button>
       <img src="img/team.jpg">
     </main>
-
+    <footer>
+      <ul>
+        <h3>Vöruflokkar</h3>
+        <li>Nauðsynjavörur</li>
+        <li>Frábærar vörur</li>
+        <li>Ómissandui vörur</li>
+        <li>Ótrúlegar vörur</li>
+        <li>Magnaðar vörur</li>
+      </ul>
+      <ul>
+        <h3>Vöruflokkar</h3>
+        <li>Trylltar vörur</li>
+        <li>Geggjaðar vörur</li>
+        <li>Svakalegar vörur</li>
+        <li>Fáránlegar vörur</li>
+        <li>Klikkaðar vörur</li>
+      </ul>
+      <ul>
+        <h3>Námskeið</h3>
+        <li>V0 - V1 námskeið</li>
+        <li>V2 - V4 námskeið</li>
+        <li>V5 - V7 námskeið</li>
+        <li>Fjallaklifur námskeið</li>
+      </ul>
+      <ul>
+        <h3>Síður</h3>
+        <li>Allar vörur</li>
+        <li>Starfsfólk</li>
+        <li>Námskeið</li>
+        <li>Karfa</li>
+      </ul>
+      <p>© 2019 Prílihúsið</p>
+    </footer>
   </body>
 </html>
