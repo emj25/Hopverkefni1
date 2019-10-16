@@ -10,6 +10,7 @@ $ffmain: 'Open Sans', 'Helvetica', arial, serif;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1em;
 }
 
 .footer__nav{
@@ -17,7 +18,11 @@ $ffmain: 'Open Sans', 'Helvetica', arial, serif;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 0 15%;
+    padding: 0 1em;
+}
+
+.footer__nav__col{
+    padding: 2em;
 }
 
 .footer__nav__header{
