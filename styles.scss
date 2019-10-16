@@ -19,13 +19,12 @@ html { /* stylelint-disable-line */
   // TODO fleiri grunn stillingar
 }
 
-@import "scss/header";
+@import 'scss/_header';
 
-@import "scss/forsida";
+@import 'scss/_forsida';
 
-@import "scss/footer";
+@import 'scss/_footer';
 
-@import "scss/forms";
 
 
 // TODO sækja allar sass skrár
