@@ -25,6 +25,7 @@ html {
 .header__items {
   display: flex;
   justify-content: space-around;
+  font-family: "Verdana" serif;
   font-size: 1.5em;
   text-transform: uppercase;
   margin: 0 25%; }
@@ -38,3 +39,44 @@ a:visited {
   color: #000000;
   max-width: 50em;
   text-decoration: none; }
+
+.course_forms {
+  border: 0px;
+  margin: 20px; }
+
+.course_image {
+  width: 100%; }
+
+.course_body {
+  margin: 0px 20px; }
+
+.course_button {
+  background-color: 0; }
+
+@media (min-width: 800px) {
+  .course_wrapper {
+    display: grid;
+    grid-template-columns: repeat(58px);
+    column-gap: 20px;
+    grid-template-rows: 50px 50px;
+    margin: 20px;
+    margin-bottom: 150px; }
+  .course_header {
+    grid-column-start: 1;
+    grid-row-start: 1; }
+  .course_text {
+    grid-column-start: 1;
+    grid-row-start: 2; }
+  .course_image {
+    grid-column-start: 2;
+    grid-row-start: 1; }
+  .course_forms_wrapper {
+    display: grid;
+    grid-template-columns: repeat(58px);
+    column-gap: 20px; }
+  .course_forms_wrapper1 {
+    grid-column-start: 1;
+    grid-row-start: 1; }
+  .course_forms_wrapper2 {
+    grid-column-start: 2;
+    grid-row-start: 1; } }
