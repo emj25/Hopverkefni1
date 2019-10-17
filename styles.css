@@ -14,28 +14,30 @@ html {
 
 .header {
   background-color: #ff5000;
-  font-family: "Oswald", serif;
-  padding: 0.625em; }
+  font-family: "Oswald", "Verdana", serif;
+  padding-bottom: 1em; }
 
-.header h1 {
+.header__header {
   text-align: center;
-  font-size: 3.75em;
-  padding-bottom: 0.5em; }
+  font-size: 3.75em; }
 
-.header__items {
+.header__nav__items {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   font-family: "Verdana" serif;
   font-size: 1.5em;
   text-transform: uppercase;
-  margin: 0 25%; }
+  font-weight: bold;
+  margin: 0 2em; }
 
-a:link {
+.header__nav__item:link {
   color: #000000;
   max-width: 50em;
+  padding: 0 2px;
   text-decoration: none; }
 
-a:visited {
+.header__nav__item:visited {
   color: #000000;
   max-width: 50em;
   text-decoration: none; }

@@ -1,41 +1,46 @@
+
 $bgc: #ff5000;
-$ffh: 'Oswald', serif;
-$fflink: 'Verdana' serif;
+$ffh: 'Oswald', 'Verdana', serif;
+$ffmain: 'Open Sans', 'Helvetica', arial, serif;
 $linkCol: #000000;
-
-
 
 .header{
     background-color: $bgc;
     font-family: $ffh;
-    padding: 0.625em;
+    padding-bottom: 1em;
 }
 
-.header h1{
+.header__header{
     text-align: center;
     font-size: 3.75em;
-    padding-bottom: 0.5em;
         
 }
 
-.header__items{
+.header__nav__items{
     display: flex;
+    flex-wrap:wrap;
     justify-content: space-around;
-    font-family: $fflink;
-    font-size: 1.5em;
+    font-family: $ffmain;
+    font-size: 1em;
     text-transform: uppercase;
-    margin: 0 25%;
+    font-weight: bold;
+    margin: 0 2em;
     
 }
 
-a:link {
+.header__nav__item:link {
+    color: $linkCol;
+    max-width: 50em;
+    padding: 0 2px;
+    text-decoration: none;
+}
+
+.header__nav__item:visited {
     color: $linkCol;
     max-width: 50em;
     text-decoration: none;
 }
 
-a:visited {
-    color: $linkCol;
-    max-width: 50em;
-    text-decoration: none;
+.header__nav__item:hover{
+    text-decoration: underline;
 }

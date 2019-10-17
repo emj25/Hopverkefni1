@@ -1,0 +1,37 @@
+
+.index__main {
+    font-family: 'Open Sans', 'Helvetica', arial, serif;
+    margin: 0 2em;
+    max-width: 75em;
+}
+
+.index__main__col{
+    display: flex;
+    flex-direction: column;
+}
+
+.index__main__row{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+
+.index__main__text{
+    width: 50%;
+    padding: 1em;
+}
+
+.index__main__text h2{
+    line-height: 3em;
+}
+
+.index__main__img {
+    display: flex;
+    object-fit: contain;
+    justify-content: center;
+    max-width: 100vh;
+    max-height: 20em; 
+    padding-bottom: 2em;
+}
+
