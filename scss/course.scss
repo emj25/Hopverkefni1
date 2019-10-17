@@ -10,14 +10,23 @@
     background-color: blue($color: #000000)
 }
 
+.course_forms_wrapper1{
+    display: grid;
+    
+    
+}
+
+.course_forms_wrapper1{
+    background-color: yellow;
+}
+
 @media (min-width: 800px){
     .course_wrapper{
         display: grid;
-        grid-template-columns: repeat(58px);
-        column-gap: 20px;
-        grid-template-rows: 50px 50px;
+        grid-template-columns: repeat(2, 40vw);
+        column-gap: 10vw;
         margin: 20px;
-        margin-bottom: 150px;
+        padding-bottom: 150px;
     }
     
     .course_header{
@@ -37,8 +46,10 @@
 
     .course_forms_wrapper{
         display: grid;
-        grid-template-columns: repeat(58px);
-        column-gap: 20px;
+        grid-template-columns: repeat(2, 40vw);
+        column-gap: 10vw;
+        margin: 20px;
+        margin-bottom: 150px;
     }
 
     .course_forms_wrapper1{

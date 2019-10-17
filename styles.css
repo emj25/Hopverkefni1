@@ -53,14 +53,19 @@ a:visited {
 .course_button {
   background-color: 0; }
 
+.course_forms_wrapper1 {
+  display: grid; }
+
+.course_forms_wrapper1 {
+  background-color: yellow; }
+
 @media (min-width: 800px) {
   .course_wrapper {
     display: grid;
-    grid-template-columns: repeat(58px);
-    column-gap: 20px;
-    grid-template-rows: 50px 50px;
+    grid-template-columns: repeat(2, 40vw);
+    column-gap: 10vw;
     margin: 20px;
-    margin-bottom: 150px; }
+    padding-bottom: 150px; }
   .course_header {
     grid-column-start: 1;
     grid-row-start: 1; }
@@ -72,8 +77,10 @@ a:visited {
     grid-row-start: 1; }
   .course_forms_wrapper {
     display: grid;
-    grid-template-columns: repeat(58px);
-    column-gap: 20px; }
+    grid-template-columns: repeat(2, 40vw);
+    column-gap: 10vw;
+    margin: 20px;
+    margin-bottom: 150px; }
   .course_forms_wrapper1 {
     grid-column-start: 1;
     grid-row-start: 1; }
