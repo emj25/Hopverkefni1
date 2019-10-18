@@ -7,8 +7,9 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../grid.css">
     <link rel="stylesheet" href="../styles.css">
+    
   </head>
-  <body>
+  <body class="course_body">
     <header class="header">
       <h1>Prílihúsið</h1>
       <div class="header__items">
@@ -18,13 +19,17 @@
         <a href="../pages/staff.html">Starfsfólk</a>
       </div>
     </header>
-    <main>
-      <h2>Námskeið</h2>
-      <p>Prílihúsið býður upp á fjölbreytt námskeið fyrir byrjendur og lengra komna. Námskeiðin eru kennd af engri annarri en Karítas Pétursdóttir. Fyrir fólk á öllum aldri. Skráðu þig núna!</p>
-      <img src="../img/climbing-gym.jpg">
+    <main class="course_main">
+        <div class="course_wrapper">
+            <h2 class="course_header">Námskeið </h2>
+            <p class="course_text">Prílihúsið býður upp á fjölbreytt námskeið fyrir byrjendur og lengra komna. Námskeiðin eru kennd af engri annarri en Karítas Pétursdóttir. Fyrir fólk á öllum aldri. Skráðu þig núna!</p>
+            <img class="course_image" src="../img/climbing-gym.jpg">
+        </div>
       
-      <h2>Almennar upplýsingar</h2>
-        <fieldset>
+  
+        <div class="course_forms_wrapper">
+            <div class="course_forms_wrapper1">
+            <fieldset class="course_forms">
             <legend>Almennar upplýsingar</legend>
                 <div>
                     <label for="name">Nafn:</label>
@@ -48,10 +53,12 @@
                             <option>Fjallaklifur</option>
                         </select>
                 </div>
-        </fieldset>
+            </fieldset>
+            </div>
       
-        <h2>Greiðsluupplýsingar</h2>
-        <fieldset>
+   
+        <div class="course_forms_wrapper2">
+        <fieldset class="course_forms">
             <legend>Greiðsluupplýsingar</legend>
                 <div>
                     <label for="name">Kortanúmer:</label>
@@ -88,8 +95,10 @@
                             </select>
                     </div>
         </fieldset>
+        </div>
+        </div>
 
-        <button>Skrá</button>
+        <button class="course_button">Skrá</button>
 
 
     </main>

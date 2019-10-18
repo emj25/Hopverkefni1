@@ -19,6 +19,10 @@ html { /* stylelint-disable-line */
   // TODO fleiri grunn stillingar
 }
 
+@import "scss/_forms";
+
+@import "scss/_course";
+
 @import 'scss/_header';
 
 @import 'scss/_forsida';
@@ -30,5 +34,3 @@ html { /* stylelint-disable-line */
 
 
 // TODO sækja allar sass skrár
-
-
