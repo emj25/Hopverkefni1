@@ -11,12 +11,17 @@
   <body>
     <header class="header">
       <h1 class="header__header">Prílihúsið</h1>
-      <div class="header__nav__items">
-        <a href="index.html" class="header__nav__item">Forsíða</a>
-        <a href="pages/products.html" class="header__nav__item">Vörur</a>
-        <a href="pages/course.html" class="header__nav__item">Námskeið</a>
-        <a href="pages/staff.html" class="header__nav__item">Starfsfólk</a>
-      </div>
+      <div class="header__nav">
+        <div class="header__nav__items">
+          <a href="index.html" class="header__nav__item">Forsíða</a>
+          <a href="pages/products.html" class="header__nav__item">Vörur</a>
+          <a href="pages/course.html" class="header__nav__item">Námskeið</a>
+          <a href="pages/staff.html" class="header__nav__item">Starfsfólk</a>
+        </div>
+        <div class="header__nav__cart">
+          <img src="img/cart.svg" class="header__cart__img">
+          <a href="pages/cart.html" class="header__cart__text">Karfa</a>
+        </div>  
     </header>
     <main class="index__main">
       <div class="index__main__col">
@@ -26,8 +31,8 @@
             <p>Prílihúsið hefur allar þær vörur sem þig vantar fyrir klifrið.</p>
             <button>Skoða vörur</button>
           </div>
-          <div class="index__main__img">
-            <img src="img/climbing-store.jpg">
+          <div class="index__main__item img--first-flex-item">
+            <img src="img/climbing-store.jpg" class="index__main__img">
           </div>
         </div>
         <div class="index__main__row">
@@ -36,8 +41,8 @@
             <p>Starfsfólkið okkar hugsar vel um þig.</p>
             <button>Kynnast starfsfólki</button>
           </div>
-          <div class="index__main__img">
-            <img src="img/team.jpg">
+          <div class="index__main__item">
+            <img src="img/team.jpg" class="index__main__img">
           </div>
         </div>
       </div>
@@ -45,46 +50,52 @@
 
     <footer class="footer">
       <div class="footer__nav">
-        <ul class="footer__nav__col">
-          <h3 class="footer__nav__name">Vöruflokkar</h3>
-          <div class="footer__nav__items">
-            <li class="footer__nav__item">Nauðsynjavörur</li>
-            <li class="footer__nav__item">Frábærar vörur</li>
-            <li class="footer__nav__item">Ómissandi vörur</li>
-            <li class="footer__nav__item">Ótrúlegar vörur</li>
-            <li class="footer__nav__item">Magnaðar vörur</li>
-          </div>
-        </ul>
-        <ul class="footer__nav__col">
-          <h3 class="footer__nav__header">Vöruflokkar</h3>
-          <div class="footer__nav__items">
-            <li class="footer__nav__item">Trylltar vörur</li>
-            <li class="footer__nav__item">Geggjaðar vörur</li>
-            <li class="footer__nav__item">Svakalegar vörur</li>
-            <li class="footer__nav__item">Fáránlegar vörur</li>
-            <li class="footer__nav__item">Klikkaðar vörur</li>
-          </div>
-        </ul>
-        <ul class="footer__nav__col">
-          <h3 class="footer__nav__header">Námskeið</h3>
-          <div class="footer__nav__items">
-            <li class="footer__nav__item">V0 - V1 námskeið</li>
-            <li class="footer__nav__item">V2 - V4 námskeið</li>
-            <li class="footer__nav__item">V5 - V7 námskeið</li>
-            <li class="footer__nav__item">Fjallaklifur námskeið</li>
-          </div>
-        </ul>
-        <ul class=footer__nav__col>
-          <h3 class="footer__nav__header">Síður</h3>
-          <div class="footer__nav__items">
-            <li class="footer__nav__item">Allar vörur</li>
-            <li class="footer__nav__item">Starfsfólk</li>
-            <li class="footer__nav__item">Námskeið</li>
-            <li class="footer__nav__item">Karfa</li>
-          </div>
-        </ul>
+        <div class="footer__nav__row">
+          <ul class="footer__nav__col">
+            <h3 class="footer__nav__name">Vöruflokkar</h3>
+            <div class="footer__nav__items">
+              <li class="footer__nav__item">Nauðsynjavörur</li>
+              <li class="footer__nav__item">Frábærar vörur</li>
+              <li class="footer__nav__item">Ómissandi vörur</li>
+              <li class="footer__nav__item">Ótrúlegar vörur</li>
+              <li class="footer__nav__item">Magnaðar vörur</li>
+            </div>
+          </ul>
+          <ul class="footer__nav__col">
+            <h3 class="footer__nav__header">Vöruflokkar</h3>
+            <div class="footer__nav__items">
+              <li class="footer__nav__item">Trylltar vörur</li>
+              <li class="footer__nav__item">Geggjaðar vörur</li>
+              <li class="footer__nav__item">Svakalegar vörur</li>
+              <li class="footer__nav__item">Fáránlegar vörur</li>
+              <li class="footer__nav__item">Klikkaðar vörur</li>
+            </div>
+          </ul>
+        </div>
+        <div class="footer__nav__row">  
+          <ul class="footer__nav__col">
+            <h3 class="footer__nav__header">Námskeið</h3>
+            <div class="footer__nav__items">
+              <li class="footer__nav__item">V0 - V1 námskeið</li>
+              <li class="footer__nav__item">V2 - V4 námskeið</li>
+              <li class="footer__nav__item">V5 - V7 námskeið</li>
+              <li class="footer__nav__item">Fjallaklifur námskeið</li>
+            </div>
+          </ul>
+          <ul class=footer__nav__col>
+            <h3 class="footer__nav__header">Síður</h3>
+            <div class="footer__nav__items">
+              <li class="footer__nav__item">Allar vörur</li>
+              <li class="footer__nav__item">Starfsfólk</li>
+              <li class="footer__nav__item">Námskeið</li>
+              <li class="footer__nav__item">Karfa</li>
+            </div>
+          </ul>
+        </div>  
       </div>
-      <div class="footer__footer">© 2019 Prílihúsið</div>
+      <div class="footer__footer">
+        <div class="footer__footer__item">© 2019 Prílihúsið</div>
+      </div>  
     </footer>
 
   </body>
