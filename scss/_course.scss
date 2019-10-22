@@ -27,6 +27,11 @@
     
 }
 
+.course_header{
+    margin-top:$gutter;
+    margin-bottom: $gutter;
+}
+
 
 @media (min-width: 800px){
     .course_wrapper {
@@ -76,5 +81,19 @@
         grid-row-start: 1;
     }
 
+@media (min-width: 1200px){
+    .course_header{
+        margin-left:100px;
+    }
 
+    .course_text{
+        margin-left:100px;
+    }
+
+    .course_forms_wrapper1{
+        margin-left:100px;
+    }
+    
+
+}
 }
