@@ -10,7 +10,14 @@
 }
 
 .course_button{
-    background-color:orange;
+    background-color:$footcolor;
+    display: block;
+    margin:auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
 }
 
 .course_form_lines{
@@ -22,13 +29,17 @@
 
 
 @media (min-width: 800px){
+    .course_wrapper {
+        margin-left: (300px);
+    }
+    
     .course_wrapper{
         display: grid;
         grid-template-columns: repeat(2, 40vw);
         grid-template-rows: 40px 250px;
         column-gap: 10vw;
         margin: 20px;
-        padding-bottom: 150px;
+        padding-bottom: 20px;
     }
     
     .course_header{
@@ -44,6 +55,7 @@
     .course_image{
         grid-column-start: 2;
         grid-row-start: 1;
+        max-height: 300px;
     }
 
     .course_forms_wrapper{
@@ -51,7 +63,7 @@
         grid-template-columns: repeat(2, 40vw);
         column-gap: 10vw;
         margin: 20px;
-        margin-bottom: 150px;
+        margin-bottom: 20px;
     }
 
     .course_forms_wrapper1{
