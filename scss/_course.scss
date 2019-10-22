@@ -1,5 +1,8 @@
+
+
 .course_image{
     width: 100%;
+    padding-top: 20px;
 }
 
 .course_body{
@@ -7,23 +10,22 @@
 }
 
 .course_button{
-    background-color: blue($color: #000000)
+    background-color:orange;
 }
 
-.course_forms_wrapper1{
-    display: grid;
-    grid-template-columns: repeat(2, 40vw);
+.course_form_lines{
+    display: flex;
+    max-width: 50vw;
+    justify-content: space-between;
     
 }
 
-.course_forms_wrapper1{
-    background-color:green;
-}
 
 @media (min-width: 800px){
     .course_wrapper{
         display: grid;
         grid-template-columns: repeat(2, 40vw);
+        grid-template-rows: 40px 250px;
         column-gap: 10vw;
         margin: 20px;
         padding-bottom: 150px;
