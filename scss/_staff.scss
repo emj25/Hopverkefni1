@@ -3,8 +3,8 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    padding: 2em 0;
-    width: 100%;
+    padding: 1em 0;
+    width: auto;
 }
 
 .staff__img__items {
@@ -12,13 +12,13 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 50em;
-    max-width: 100vh;
+    height: 32em;
 }
 
 .staff__img__item {
     display: flex;
     position: absolute;
+    margin: 10px;
     width: 100%;
     height: 100%;
     left:0; top:0; right: 0; bottom: 0;
@@ -34,19 +34,33 @@
 
 .staff__img__front {
     position: absolute;
-    max-width: 100%;
-    height: auto;
+    padding-bottom: 2em;
+    max-width: 90%;
+    height: 100%;
     backface-visibility: hidden;
 }
 
 .staff__img__back {
+    font-family: $ffmain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    max-width: 100%;
-    height:auto;
+    width: 90%;
+    background-color: $colwhite;
+    height:100%;
     background: $colwhite;
     transform: rotateY(180deg);
     backface-visibility: hidden;
 }
+
+.img__back__text {
+    padding: 1em;
+    align-self: center;
+}
+
+
 
 .staff__img__items:hover .staff__img__item {
     transition: rotateY(180deg);
@@ -63,8 +77,8 @@
         padding-right: 10px;
     }
 
-    .staff__img__item{
-        padding: 5px;
+    .staff__img__front {
+        padding-bottom: 2em;
     }
 
 }
