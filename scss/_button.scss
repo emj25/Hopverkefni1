@@ -1,0 +1,15 @@
+.button {
+    background-color: $colblue;
+    display: block;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    width: 9em;
+    height: 2em;
+    border-radius: 0.3em;
+    align-self: flex-start;
+}
+
+.button:hover {
+    background-color: $colred;
+    color: $colwhite;
+}
