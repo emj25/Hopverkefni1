@@ -1,16 +1,26 @@
 
-$gutter: 12px;
+$gutter: 20px;
+$maxwidth: 1200px;
 $ffh: 'Oswald', 'Verdana', serif;
 $ffmain: 'Open Sans', 'Helvetica', arial, serif;
-$headcolor: #ff5000;
-$footcolor: #00b7ff;
+$colred: #ff5000;
+$colblue: #00b7ff;
 $colwhite: #fffcf2;
 $colblack: #000000;
+
+$fontsizeXS: 0.75em;
+$fontsizeS: 0.875em;
+$fontsizeM: 1em;
+$fontsizeL: 1.125em;
+$fontsizeXL: calc(21em/16);
+$fontsizeXXL: 1.5em;
+$fontsizeH: 2.25em;
+$fontsizeXH: 3em;
+$fontsizeXXH: 3.75em;
 
 $grid-col: calc(100%/12);
 
 .html {
-    max-width: 1200px; 
     font-size: 16px;
 }
 
