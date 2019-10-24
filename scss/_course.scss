@@ -22,7 +22,7 @@
 
 .course_form_lines{
     display: flex;
-    max-width: 50vw;
+    max-width: 60vw;
     justify-content: space-between;
     
 }
@@ -30,6 +30,17 @@
 .course_header{
     margin-top:$gutter;
     margin-bottom: $gutter;
+}
+
+fieldset{
+    border: 0px;
+    margin-bottom: 20px;
+}
+
+fieldset> legend{
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-bottom: 0.5em;
 }
 
 
