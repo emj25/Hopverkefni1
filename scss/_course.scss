@@ -2,11 +2,13 @@
 
 .course_image{
     width: 100%;
-    padding-top: 20px;
+    padding-top: $gutter;
 }
 
 .course_body{
-    margin: 0px 20px;
+    margin: 0px $gutter;
+    font-size: $fontsizeM;
+    font-family: $ffmain;
 }
 
 .course_button{
@@ -15,14 +17,36 @@
     margin:auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    width: 150px;
+    width: calc(150px );
     height: 30px;
     border-radius: 5px;
 }
 
+<<<<<<< HEAD
+=======
+.course_form_lines{
+    display: flex;
+    max-width: 60vw;
+    justify-content: space-between;
+    
+}
+
+>>>>>>> e3ab03b8d4a3c9fc5bb34cdaa815a39564175440
 .course_header{
     margin-top:$gutter;
     margin-bottom: $gutter;
+    font-size: $fontsizeXL;
+}
+
+fieldset{
+    border: 0px;
+    margin-bottom: $gutter;
+}
+
+fieldset> legend{
+    font-weight: bold;
+    font-size: $fontsizeXL;
+    padding-bottom: 0.5em;
 }
 
 
@@ -34,10 +58,10 @@
     .course_wrapper{
         display: grid;
         grid-template-columns: repeat(2, 40vw);
-        grid-template-rows: 40px 250px;
+        grid-template-rows: 60px 250px;
         column-gap: 10vw;
-        margin: 20px;
-        padding-bottom: 20px;
+        margin: $gutter;
+        padding-bottom: $gutter;
     }
     
     .course_header{
@@ -55,7 +79,28 @@
         grid-row-start: 1;
         max-height: 300px;
     }
+<<<<<<< HEAD
 }
+=======
+
+    .course_forms_wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 40vw);
+        column-gap: 10vw;
+        margin: $gutter;
+        margin-bottom: $gutter;
+    }
+
+    .course_forms_wrapper1{
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+
+    .course_forms_wrapper2{
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+>>>>>>> e3ab03b8d4a3c9fc5bb34cdaa815a39564175440
 
 @media (min-width: 1200px){
     .course_header{

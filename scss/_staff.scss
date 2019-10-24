@@ -1,7 +1,5 @@
 
 .staff__img {
-    display: flex;
-    flex-wrap: wrap;
     position: relative;
     padding: 1em 0;
     width: auto;
@@ -11,8 +9,8 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
     height: 32em;
+    width:auto;
 }
 
 .staff__img__item {
@@ -35,7 +33,7 @@
 .staff__img__front {
     position: absolute;
     padding-bottom: 2em;
-    max-width: 90%;
+    max-width: 100%;
     height: 100%;
     backface-visibility: hidden;
 }
@@ -47,7 +45,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    width: 90%;
+    width: 100%;
     background-color: $colwhite;
     height:100%;
     background: $colwhite;
@@ -56,11 +54,9 @@
 }
 
 .img__back__text {
-    padding: 1em;
-    align-self: center;
+    padding: 0 $spacingL;
+    align-content: center;
 }
-
-
 
 .staff__img__items:hover .staff__img__item {
     transition: rotateY(180deg);
@@ -68,9 +64,12 @@
 
 @media(min-width: 700px){
     .staff__img{
+        display:flex;
+        flex-wrap: wrap;
         margin-left: -10px;
         margin-right: -10px;
     }
+    
     .staff__img__items{
         width: 50%;
         padding-left: 10px;
@@ -80,10 +79,11 @@
     .staff__img__front {
         padding-bottom: 2em;
     }
-
 }
 
 @media(min-width: 1000){
-    
+    .staff__img {
+        height: 109em;
+    }
 
 } 

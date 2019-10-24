@@ -1,13 +1,10 @@
 .button {
     background-color: $colblue;
     color: $colblack;
-    display: block;
-    margin-top: 3em;
-    margin-bottom: 3em;
     width: 9em;
-    height: 2em;
+    height: 3em;
     border-radius: 0.3em;
-    align-self: flex-start;
+    border-style: none;
 }
 
 .button:hover {
@@ -15,8 +12,13 @@
     color: $colwhite;
 }
 
+.button__link {
+    font-size: $fontsizeXL;
+}
+
 .button__link:hover {
-    color: $colwhite;
+    background-color: $colwhite;
+    color: $colred;
 }
 
 .button__link:link {
