@@ -82,6 +82,7 @@
     .staff__img{
         display:flex;
         flex-wrap: wrap;
+        max-width: $maxwidth;
     }
     
     .staff__img__items{
@@ -93,10 +94,6 @@
         padding-bottom: 2em;
         max-width: 100%;
     }
-
-    .staff__img {
-        max-width: $maxwidth;
-    }
 }
 
 @media(min-width: 1000){
@@ -107,5 +104,10 @@
     .staff__main {
         align-items: center;
     }
-
 } 
+
+@media(min-width: 1200) {
+    .staff__main {
+        padding-left: calc((100vw - $maxwidth) / 2); 
+    }
+}
