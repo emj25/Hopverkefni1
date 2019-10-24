@@ -9,8 +9,8 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    height: 32em;
-    width:auto;
+    height: calc(100vw *2 / 3);
+    width: 100%;
 }
 
 .staff__img__item {
@@ -66,14 +66,10 @@
     .staff__img{
         display:flex;
         flex-wrap: wrap;
-        margin-left: -10px;
-        margin-right: -10px;
     }
     
     .staff__img__items{
         width: 50%;
-        padding-left: 10px;
-        padding-right: 10px;
     }
 
     .staff__img__front {
@@ -83,7 +79,7 @@
 
 @media(min-width: 1000){
     .staff__img {
-        height: 109em;
+        width: 50%;
     }
 
 } 

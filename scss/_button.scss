@@ -1,8 +1,6 @@
 .button {
     background-color: $colblue;
     color: $colblack;
-    width: 9em;
-    height: 3em;
     border-radius: 0.3em;
     border-style: none;
 }
@@ -11,14 +9,14 @@
     background-color: $colred;
     color: $colwhite;
 }
-
+/*
 .button__link {
     font-size: $fontsizeXL;
 }
 
 .button__link:hover {
-    background-color: $colwhite;
-    color: $colred;
+    background-color: $colred;
+    color: $colwhite;
 }
 
 .button__link:link {
@@ -29,4 +27,4 @@
 .button__link:visited {
     color: $colblack;
     text-decoration: none;
-}
+}*/

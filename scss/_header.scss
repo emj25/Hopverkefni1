@@ -2,30 +2,35 @@
 .header{
     background-color: $colred;
     font-family: $ffh;
-    padding-bottom: 1em;
+    padding-bottom: $spacingS;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
 }
 
 .header__header{
     text-align: center;
-    font-size: 3.75em;     
+    font-size: fontsizeXXH;     
 }
 
 .header__nav {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     justify-content: center;
     flex-direction: column;
+    max-width: $maxwidth;
 }
 
 .header__nav__items{
     display: flex;
     flex-wrap:wrap;
     font-family: $ffmain;
-    font-size: 1em;
+    font-size: $fontsizeL;
     text-transform: uppercase;
     font-weight: bold;
-    margin: 0 2em;
-    padding: 1em 0;
+    margin: 0 $spacingS;
+    padding: $spacingS 0;
     justify-content: center;    
 }
 
@@ -42,7 +47,7 @@
 
 .header__nav__item:visited {
     color: $colblack;
-    max-width: 50em;
+    max-width: $maxwidth;
     text-decoration: none;
 }
 
@@ -60,7 +65,7 @@
     color: $colblack;
     font-weight: normal;
     text-decoration: none;
-    padding-left: 0.3em;
+    padding-left: $spacingS;
 }
 
 .header__cart__text:hover {
@@ -79,10 +84,10 @@
     .header__nav__cart {
         position: absolute;
         align-self: flex-end;
-        
+     
     }
     
     .header__cart__text {
-        padding-right: 1em;
+        padding-right: 1rem;
     }
 }

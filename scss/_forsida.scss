@@ -1,15 +1,18 @@
 .index__main {
     display:flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
     font-family: $ffmain;
     margin: 0 $spacingS;
-    max-width: 75em;
+    
 }
 
 .index__main__col{
     display: flex;
     width: 100%;
     flex-direction: column;
+    max-width: calc(#{$maxwidth} + 2 * #{$spacingS});
 }
 
 .index__main__row{
@@ -29,11 +32,11 @@
 
 .index__card__header{
     line-height: 3em;
-    font-size: $fontsizeXXL;
+    font-size: $fontsizeH;
 }
 
 .index__card__text {
-    font-size: $fontsizeXL;
+    font-size: $fontsizeXXL;
     padding: $spacingL 0;
 }
 
@@ -43,6 +46,8 @@
 
 .button {
     align-self: flex-start;
+    line-height: 3em;
+    font-size: $fontsizeL;
     width: 60%;
 }
 
@@ -56,6 +61,7 @@
     }
     .index__main__card {
         width: 50%;
+        padding: 0 $spacingS;
         }
 
     .img--first-flex-item {

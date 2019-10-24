@@ -5,7 +5,7 @@
     font-family: $ffmain;
     display: flex;
     flex-direction: column;
-    padding: 1em;
+    padding: $spacingS;
 }
 
 .footer__nav {
@@ -20,15 +20,12 @@
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 0 1em;
     width: 100%;
 }
 
 .footer__nav__col{
-    padding: 2em 0em;
+    padding: $spacingS;
     width: 50%;
-
-    
 }
 
 .footer__nav__header{
@@ -62,21 +59,15 @@
     width: 100%;
     align-items: center;
     flex-direction: column;
-    
-  }
+}
 
-  .footer__footer__item{
-
-  }
-
-@media(min-width: 400px){
+ @media(min-width: 400px){
     .footer__nav__row{
         flex-direction: row;
     }
 }
 
 @media(min-width: 700px) {
-
     .footer{
         flex-direction: column;
     }
@@ -86,5 +77,4 @@
     .footer__nav {
         flex-direction: row;
     }
-
 }
