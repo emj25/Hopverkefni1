@@ -2,11 +2,13 @@
 
 .course_image{
     width: 100%;
-    padding-top: 20px;
+    padding-top: $gutter;
 }
 
 .course_body{
-    margin: 0px 20px;
+    margin: 0px $gutter;
+    font-size: $fontsizeM;
+    font-family: $ffmain;
 }
 
 .course_button{
@@ -15,7 +17,7 @@
     margin:auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    width: 150px;
+    width: calc(150px );
     height: 30px;
     border-radius: 5px;
 }
@@ -30,16 +32,17 @@
 .course_header{
     margin-top:$gutter;
     margin-bottom: $gutter;
+    font-size: $fontsizeXL;
 }
 
 fieldset{
     border: 0px;
-    margin-bottom: 20px;
+    margin-bottom: $gutter;
 }
 
 fieldset> legend{
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: $fontsizeXL;
     padding-bottom: 0.5em;
 }
 
@@ -54,8 +57,8 @@ fieldset> legend{
         grid-template-columns: repeat(2, 40vw);
         grid-template-rows: 60px 250px;
         column-gap: 10vw;
-        margin: 20px;
-        padding-bottom: 20px;
+        margin: $gutter;
+        padding-bottom: $gutter;
     }
     
     .course_header{
@@ -78,8 +81,8 @@ fieldset> legend{
         display: grid;
         grid-template-columns: repeat(2, 40vw);
         column-gap: 10vw;
-        margin: 20px;
-        margin-bottom: 20px;
+        margin: $gutter;
+        margin-bottom: $gutter;
     }
 
     .course_forms_wrapper1{
