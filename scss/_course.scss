@@ -20,13 +20,6 @@
     border-radius: 5px;
 }
 
-.course_form_lines{
-    display: flex;
-    max-width: 50vw;
-    justify-content: space-between;
-    
-}
-
 .course_header{
     margin-top:$gutter;
     margin-bottom: $gutter;
@@ -62,38 +55,13 @@
         grid-row-start: 1;
         max-height: 300px;
     }
-
-    .course_forms_wrapper{
-        display: grid;
-        grid-template-columns: repeat(2, 40vw);
-        column-gap: 10vw;
-        margin: 20px;
-        margin-bottom: 20px;
-    }
-
-    .course_forms_wrapper1{
-        grid-column-start: 1;
-        grid-row-start: 1;
-    }
-
-    .course_forms_wrapper2{
-        grid-column-start: 2;
-        grid-row-start: 1;
-    }
+}
 
 @media (min-width: 1200px){
     .course_header{
         margin-left:100px;
     }
-
     .course_text{
         margin-left:100px;
     }
-
-    .course_forms_wrapper1{
-        margin-left:100px;
-    }
-    
-
-}
 }
