@@ -22,6 +22,8 @@
     border-radius: 5px;
 }
 
+<<<<<<< HEAD
+=======
 .course_form_lines{
     display: flex;
     max-width: 60vw;
@@ -29,6 +31,7 @@
     
 }
 
+>>>>>>> e3ab03b8d4a3c9fc5bb34cdaa815a39564175440
 .course_header{
     margin-top:$gutter;
     margin-bottom: $gutter;
@@ -76,6 +79,9 @@ fieldset> legend{
         grid-row-start: 1;
         max-height: 300px;
     }
+<<<<<<< HEAD
+}
+=======
 
     .course_forms_wrapper{
         display: grid;
@@ -94,20 +100,13 @@ fieldset> legend{
         grid-column-start: 2;
         grid-row-start: 1;
     }
+>>>>>>> e3ab03b8d4a3c9fc5bb34cdaa815a39564175440
 
 @media (min-width: 1200px){
     .course_header{
         margin-left:100px;
     }
-
     .course_text{
         margin-left:100px;
     }
-
-    .course_forms_wrapper1{
-        margin-left:100px;
-    }
-    
-
-}
 }
