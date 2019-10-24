@@ -1,5 +1,6 @@
 .button {
     background-color: $colblue;
+    color: $colblack;
     display: block;
     margin-top: 3em;
     margin-bottom: 3em;
@@ -12,4 +13,18 @@
 .button:hover {
     background-color: $colred;
     color: $colwhite;
+}
+
+.button__link:hover {
+    color: $colwhite;
+}
+
+.button__link:link {
+    color: $colblack;
+    text-decoration: none;;
+}
+
+.button__link:visited {
+    color: $colblack;
+    text-decoration: none;
 }

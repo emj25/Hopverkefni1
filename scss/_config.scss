@@ -1,5 +1,10 @@
 
 $gutter: 20px;
+$spacingS: calc(#{$gutter} / 2);
+$spacingM: calc(#{$gutter});
+$spacingL: calc(#{$gutter} * 2);
+$spacingXL: calc(#{$gutter} * 4);
+
 $maxwidth: 1200px;
 $ffh: 'Oswald', 'Verdana', serif;
 $ffmain: 'Open Sans', 'Helvetica', arial, serif;

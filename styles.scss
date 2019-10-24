@@ -19,11 +19,9 @@ html { /* stylelint-disable-line */
   // TODO fleiri grunn stillingar
 }
 
-@import "scss/_button";
+@import 'scss/_button';
 
-@import "scss/_forms";
-
-@import "scss/_course";
+@import 'scss/_course';
 
 @import 'scss/_header';
 
@@ -33,8 +31,6 @@ html { /* stylelint-disable-line */
 
 @import 'scss/_staff';
 
-@import 'scss/_product.scss'
-
-
+@import 'scss/_product';
 
 // TODO sækja allar sass skrár

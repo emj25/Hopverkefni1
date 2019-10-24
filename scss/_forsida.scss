@@ -1,7 +1,8 @@
-
 .index__main {
+    display:flex;
+    align-items: center;
     font-family: $ffmain;
-    margin: 0 2em;
+    margin: 0 $spacingS;
     max-width: 75em;
     
 }
@@ -19,7 +20,8 @@
 }
 
 .index__main__text{
-    padding-bottom: 2em;
+    padding-bottom: $spacingS;
+    align-items: flex-start;
 }
 
 .index__main__text h2{
@@ -31,7 +33,7 @@
     justify-content: flex-start;
     width: 100%;
     height: auto; 
-    padding-bottom: 2em;
+    padding-bottom: $spacingS;
 }
 
 .index__main__img{
@@ -40,7 +42,7 @@
 
 @media(min-width: 700px){
     .index__main {
-        margin: 2em;
+        margin: $spacingS;
     }
 
     .index__main__text {
@@ -53,14 +55,13 @@
 
     .img--first-flex-item {
         order: -1;
-        padding-right: 1em;
+        padding-right: $spacingS;
     }
 }
 
 @media(min-width: 1000px){
     .index__main {
-        max-width: 1450px;
-       justify-content: center;
+       align-items: center;
     }
 }
 
