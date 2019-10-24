@@ -3,16 +3,17 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 0 $spacingS;
 }
 
 .products {
-    max-width: calc($maxwidth + 2 * $basepadding); 
+    max-width: calc(#{$maxwidth} + 2 * #{$spacingS}); 
     
     display: flex;
     flex-wrap: wrap;
     
     list-style: none;
-    padding-bottom: 2em;
+    padding-bottom: $spacingL;
 }
 
 .product {
@@ -28,9 +29,9 @@
         width: calc(100% / 3);
     }
 
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-bottom: 2em;
+    padding-right: $spacingS;
+    padding-left: $spacingS;
+    padding-bottom: $spacingM;
 }
 
 .product__image{
@@ -94,6 +95,5 @@
 .cart-button-image{
     height: 1em;
     width: 1em;
-    margin-right: 0.5em;;
+    margin-right: 0.5em;
 }
-
