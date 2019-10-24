@@ -4,7 +4,6 @@
     font-family: $ffmain;
     margin: 0 $spacingS;
     max-width: 75em;
-    
 }
 
 .index__main__col{
@@ -19,25 +18,32 @@
     flex-wrap:wrap;
 }
 
-.index__main__text{
-    padding-bottom: $spacingS;
-    align-items: flex-start;
-}
-
-.index__main__text h2{
-    line-height: 3em;
-}
-
-.index__main__item {
+.index__main__card {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content:space-between;
     width: 100%;
     height: auto; 
-    padding-bottom: $spacingS;
+    padding-bottom: $spacingL;
+}
+
+.index__card__header{
+    line-height: 3em;
+    font-size: $fontsizeXXL;
+}
+
+.index__card__text {
+    font-size: $fontsizeXL;
+    padding: $spacingL 0;
 }
 
 .index__main__img{
     width: 100%;
+}
+
+.button {
+    align-self: flex-start;
+    width: 60%;
 }
 
 @media(min-width: 700px){
@@ -45,18 +51,18 @@
         margin: $spacingS;
     }
 
-    .index__main__text {
+    .index__main__row {
+        padding-bottom: $spacingL;
+    }
+    .index__main__card {
         width: 50%;
         }
-
-    .index__main__item {
-        width: 50%;
-    }
 
     .img--first-flex-item {
         order: -1;
         padding-right: $spacingS;
     }
+
 }
 
 @media(min-width: 1000px){
