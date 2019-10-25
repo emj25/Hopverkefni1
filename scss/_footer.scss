@@ -73,11 +73,13 @@
         flex-direction: column;
     }
 
+    .footer__nav__row{
+        flex-direction: row;
+    }
+
     .footer__nav {
         max-width: $maxwidth;
+        flex-direction: row;
     }
 }
 
-@media(min-width: 1000px) {
- 
-}
