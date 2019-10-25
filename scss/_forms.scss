@@ -1,37 +1,77 @@
-.course_form_lines{
+.forms{
     display: flex;
-    max-width: 50vw;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 $spacingS;
 }
 
-@media (min-width: 800px){
-    .course_forms_wrapper{
-        display: grid;
-        grid-template-columns: repeat(2, 40vw);
-        column-gap: 10vw;
-        margin: 20px;
-        margin-bottom: 20px;
-    }
+.form__label{
+    font-size: $fontsizeXL;
+    margin-right: $spacingS;
+}
 
-    .course_forms_wrapper1{
-        grid-column-start: 1;
-        grid-row-start: 1;
-    }
+.form__input{
+    flex-grow: 1;
+    border-style: solid;
+    border-color: $colblack;
+    border-width: 1px;
+    border-radius: 5px;
+    font-size: $fontsizeXL;
+    padding: 0.25rem;
+}
 
-    .course_forms_wrapper2{
-        grid-column-start: 2;
-        grid-row-start: 1;
+.form__input--spacing-right{
+    flex-grow: 1;
+    border-style: solid;
+    border-color: $colblack;
+    border-width: 1px;
+    border-radius: 5px;
+    font-size: $fontsizeXL;
+    margin-right: $spacingS;
+    padding: 0.25rem;
+}
+
+.form__line{
+    display: flex;
+    padding: $spacingS 0;
+}
+
+.forms__wrapper{
+    max-width: calc(#{$maxwidth} + 2 * #{$spacingS}); 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: $spacingM;
+
+    @media (min-width: 800px){
+        flex-direction: row;
     }
 }
 
-@media (min-width: 1200px){
-    .course_header{
-        margin-left:100px;
+.form__wrapper{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    @media (min-width: 800px) {
+        width: 50%;
     }
-    .course_text{
-        margin-left:100px;
-    }
-    .course_forms_wrapper1{
-        margin-left:100px;
-    }
+
+    padding-right: $spacingS;
+    padding-left: $spacingS;
+    padding-bottom: $spacingM;
+}
+
+fieldset{
+    border: 0px;
+    margin-bottom: $spacingM;
+}
+
+fieldset> legend{
+    font-weight: bold;
+    font-size: $fontsizeXL;
+    padding-bottom: 0.5em;
 }

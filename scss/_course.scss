@@ -1,17 +1,38 @@
-
-
-.course_image{
+.course__wrapper {
+    max-width: calc(#{$maxwidth} + 2 * #{$spacingS}); 
     width: 100%;
-    padding-top: $gutter;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: $spacingM;
+
+    @media (min-width: 800px){
+        flex-direction: row;
+    }
 }
 
-.course_body{
-    margin: 0px $gutter;
-    font-size: $fontsizeM;
-    font-family: $ffmain;
+.course__content{
+    width: 100%;
+    padding: $spacingM $spacingS;
+
+    @media (min-width: 800px){
+        width: 50%;
+    }
 }
 
-.course_button{
+.course__image{
+    width: 100%;
+}
+
+.course__header{
+    margin-bottom: $spacingM;
+    font-size: $fontsizeH;
+}
+
+.course__text{
+    font-size: $fontsizeXXL;
+}
+
+.course__button{
     background-color:$colblue;
     display: block;
     margin:auto;
@@ -22,67 +43,8 @@
     border-radius: 5px;
 }
 
-.course_button:hover{
+.course__button:hover{
     background-color: $colred;
-    color: white;
+    color: $colwhite;
     transition: 0.2s ease-in-out;
-}
-
-.course_header{
-    margin-top:$gutter;
-    margin-bottom: $gutter;
-    font-size: $fontsizeXL;
-}
-
-fieldset{
-    border: 0px;
-    margin-bottom: $gutter;
-}
-
-fieldset> legend{
-    font-weight: bold;
-    font-size: $fontsizeXL;
-    padding-bottom: 0.5em;
-}
-
-
-
-@media (min-width: 800px){
-    .course_wrapper {
-        margin-left: (300px);
-    }
-    
-    .course_wrapper{
-        display: grid;
-        grid-template-columns: repeat(2, 40vw);
-        grid-template-rows: 60px 250px;
-        column-gap: 10vw;
-        margin: $gutter;
-        padding-bottom: $gutter;
-    }
-    
-    .course_header{
-        grid-column-start: 1;
-        grid-row-start: 1;
-    }
-
-    .course_text{
-        grid-column-start: 1;
-        grid-row-start: 2;
-    }
-    
-    .course_image{
-        grid-column-start: 2;
-        grid-row-start: 1;
-        max-height: 300px;
-    }
-}
-
-@media (min-width: 1200px){
-    .course_header{
-        margin-left:100px;
-    }
-    .course_text{
-        margin-left:100px;
-    }
 }

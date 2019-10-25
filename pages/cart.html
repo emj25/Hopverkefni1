@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vöruhúsið</title>
+  <title>Prílihúsið - Karfa</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../grid.css">
@@ -29,7 +29,7 @@
     </div>
   </header>
 
-  <main>
+  <main class="main">
     <div class="cart">
       <ul class="cart__products">
         <li class="cart__product">
@@ -98,78 +98,76 @@
       </ul>
     </div>
 
-    <div class="course_forms_wrapper">
-      <div class="course_forms_wrapper1">
-        <fieldset class="course_forms">
-          <legend>Almennar upplýsingar</legend>
-          <div class="course_form_lines">
-            <label for="name">Nafn:</label>
-            <input type="text" name="name" id="name" required>
-          </div>
-          <div class="course_form_lines">
-            <label for="address">Heimilisfang:</label>
-            <input type="text" name="address" id="address" required>
-          </div>
-          <div class="course_form_lines">
-            <label for="age">Aldur:</label>
-            <input type="number" name="age" id="age" required>
-          </div>
-          <div class="course_form_lines">
-            <label for="course">Námskeið:</label>
-            <select name="course" id="course">
-              <option>V0 - V1</option>
-              <option>V2 - V4</option>
-              <option>V5 - V7</option>
-              <option>Krakkanámskeið</option>
-              <option>Fjallaklifur</option>
-            </select>
-          </div>
-        </fieldset>
+    <div class="forms__wrapper">
+        <div class="form__wrapper">
+          <fieldset class="form">
+            <legend>Almennar upplýsingar</legend>
+            <div class="form__line">
+              <label class="form__label" for="name">Nafn:</label>
+              <input class="form__input" type="text" name="name" id="name" required>
+            </div>
+            <div class="form__line">
+              <label class="form__label" for="address">Heimilisfang:</label>
+              <input class="form__input" type="text" name="address" id="address" required>
+            </div>
+            <div class="form__line">
+              <label class="form__label" for="age">Aldur:</label>
+              <input class="form__input" type="number" name="age" id="age" required>
+            </div>
+            <div class="form__line">
+              <label class="form__label" for="course">Námskeið:</label>
+              <select class="form__input" name="course" id="course">
+                <option>V0 - V1</option>
+                <option>V2 - V4</option>
+                <option>V5 - V7</option>
+                <option>Krakkanámskeið</option>
+                <option>Fjallaklifur</option>
+              </select>
+            </div>
+          </fieldset>
+        </div>
+  
+  
+        <div class="form__wrapper">
+          <fieldset class="form">
+            <legend>Greiðsluupplýsingar</legend>
+            <div class="form__line">
+              <label class="form__label" for="cardnumber">Kortanúmer:</label>
+              <input class="form__input" type="text" name="cardnumber" id="cardnumber" required>
+            </div>
+            <div class="form__line">
+              <label class="form__label" for="cardholder">Korthafi:</label>
+              <input class="form__input" type="text" name="cardholder" id="cardholder" required>
+            </div>
+            <div class="form__line">
+              <label class="form__label">Gildistími:</label>
+              <label class="form__label" for="expirymonth">Mán:</label>
+              <select class="form__input--spacing-right" name="expirymonth" id="expirymonth">
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>06</option>
+                <option>07</option>
+                <option>08</option>
+                <option>09</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+              </select>
+              <label class="form__label" for="expiryyear">Ár:</label>
+              <select class="form__input" name="expiryyear" id="expiryyear">
+                <option>2019</option>
+                <option>2020</option>
+                <option>2021</option>
+                <option>2022</option>
+              </select>
+            </div>
+          </fieldset>
+        </div>
       </div>
-
-
-      <div class="course_forms_wrapper2">
-        <fieldset class="course_forms">
-          <legend>Greiðsluupplýsingar</legend>
-          <div class="course_form_lines">
-            <label for="cardnumber">Kortanúmer:</label>
-            <input type="text" name="cardnumber" id="cardnumber" required>
-          </div>
-          <div class="course_form_lines">
-            <label for="cardholder">Korthafi:</label>
-            <input type="text" name="cardholder" id="cardholder" required>
-          </div>
-          <div class="course_form_lines">
-            <label for="expirymonth">Mán:</label>
-            <select name="expirymonth" id="expirymonth">
-              <option>01</option>
-              <option>02</option>
-              <option>03</option>
-              <option>04</option>
-              <option>05</option>
-              <option>06</option>
-              <option>07</option>
-              <option>08</option>
-              <option>09</option>
-              <option>10</option>
-              <option>11</option>
-              <option>12</option>
-            </select>
-          </div>
-          <div class="course_form_lines">
-            <label for="expiryyear">Ár:</label>
-            <select name="expiryyear" id="expiryyear">
-              <option>2019</option>
-              <option>2020</option>
-              <option>2021</option>
-              <option>2022</option>
-            </select>
-          </div>
-        </fieldset>
-      </div>
-    </div>
-
-    <button class="course_button">Skrá</button>
+        <button class="course__button">Skrá</button>
 
   </main>
 

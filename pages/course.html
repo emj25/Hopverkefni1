@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vöruhúsið</title>
+  <title>Prílihúsið - Námskeið</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../grid.css">
@@ -29,34 +29,39 @@
     </div>
   </header>
 
-  <main class="course_main">
-    <div class="course_wrapper">
-      <h2 class="course_header">Námskeið</h2>
-      <p class="course_text">Prílihúsið býður upp á fjölbreytt námskeið fyrir byrjendur og lengra komna. Námskeiðin eru
-        kennd af engri annarri en Karítas Pétursdóttir. Fyrir fólk á öllum aldri. Skráðu þig núna!</p>
-      <img class="course_image" src="../img/climbing-gym.jpg" alt="Engin mynd">
+  <main class="main">
+    <div class="course__wrapper">
+      <div class="course__content">
+        <h2 class="course__header">Námskeið</h2>
+        <p class="course__text">Prílihúsið býður upp á fjölbreytt námskeið fyrir byrjendur og lengra komna. Námskeiðin
+          eru
+          kennd af engri annarri en Karítas Pétursdóttir. Fyrir fólk á öllum aldri. Skráðu þig núna!</p>
+      </div>
+      <div class="course__content">
+        <img class="course__image" src="../img/climbing-gym.jpg" alt="Engin mynd">
+      </div>
     </div>
 
 
-    <div class="course_forms_wrapper">
-      <div class="course_forms_wrapper1">
-        <fieldset class="course_forms">
+    <div class="forms__wrapper">
+      <div class="form__wrapper">
+        <fieldset class="form">
           <legend>Almennar upplýsingar</legend>
-          <div class="course_form_lines">
-            <label for="name">Nafn:</label>
-            <input type="text" name="name" id="name" required>
+          <div class="form__line">
+            <label class="form__label" for="name">Nafn:</label>
+            <input class="form__input" type="text" name="name" id="name" required>
           </div>
-          <div class="course_form_lines">
-            <label for="address">Heimilisfang:</label>
-            <input type="text" name="address" id="address" required>
+          <div class="form__line">
+            <label class="form__label" for="address">Heimilisfang:</label>
+            <input class="form__input" type="text" name="address" id="address" required>
           </div>
-          <div class="course_form_lines">
-            <label for="age">Aldur:</label>
-            <input type="number" name="age" id="age" required>
+          <div class="form__line">
+            <label class="form__label" for="age">Aldur:</label>
+            <input class="form__input" type="number" name="age" id="age" required>
           </div>
-          <div class="course_form_lines">
-            <label for="course">Námskeið:</label>
-            <select name="course" id="course">
+          <div class="form__line">
+            <label class="form__label" for="course">Námskeið:</label>
+            <select class="form__input" name="course" id="course">
               <option>V0 - V1</option>
               <option>V2 - V4</option>
               <option>V5 - V7</option>
@@ -68,20 +73,21 @@
       </div>
 
 
-      <div class="course_forms_wrapper2">
-        <fieldset class="course_forms">
+      <div class="form__wrapper">
+        <fieldset class="form">
           <legend>Greiðsluupplýsingar</legend>
-          <div class="course_form_lines">
-            <label for="cardnumber">Kortanúmer:</label>
-            <input type="text" name="cardnumber" id="cardnumber" required>
+          <div class="form__line">
+            <label class="form__label" for="cardnumber">Kortanúmer:</label>
+            <input class="form__input" type="text" name="cardnumber" id="cardnumber" required>
           </div>
-          <div class="course_form_lines">
-            <label for="cardholder">Korthafi:</label>
-            <input type="text" name="cardholder" id="cardholder" required>
+          <div class="form__line">
+            <label class="form__label" for="cardholder">Korthafi:</label>
+            <input class="form__input" type="text" name="cardholder" id="cardholder" required>
           </div>
-          <div class="course_form_lines">
-            <label for="expirymonth">Mán:</label>
-            <select name="expirymonth" id="expirymonth">
+          <div class="form__line">
+            <label class="form__label">Gildistími:</label>
+            <label class="form__label" for="expirymonth">Mán:</label>
+            <select class="form__input--spacing-right" name="expirymonth" id="expirymonth">
               <option>01</option>
               <option>02</option>
               <option>03</option>
@@ -95,10 +101,8 @@
               <option>11</option>
               <option>12</option>
             </select>
-          </div>
-          <div class="course_form_lines">
-            <label for="expiryyear">Ár:</label>
-            <select name="expiryyear" id="expiryyear">
+            <label class="form__label" for="expiryyear">Ár:</label>
+            <select class="form__input" name="expiryyear" id="expiryyear">
               <option>2019</option>
               <option>2020</option>
               <option>2021</option>
@@ -108,8 +112,7 @@
         </fieldset>
       </div>
     </div>
-
-    <button class="course_button">Skrá</button>
+      <button class="course__button">Skrá</button>
 
 
   </main>
@@ -137,7 +140,7 @@
           </ul>
         </div>
       </div>
-      <div class="footer__nav__row">  
+      <div class="footer__nav__row">
         <div class="footer__nav__col">
           <div class="footer__nav__header">Námskeið</div>
           <ul class="footer__nav__items">
@@ -156,7 +159,7 @@
             <li><a href="cart.html" class="footer__nav__item">Karfa</a></li>
           </ul>
         </div>
-      </div>  
+      </div>
     </div>
     <div class="footer__footer">
       <div class="footer__footer__item">© 2019 Prílihúsið</div>
